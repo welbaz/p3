@@ -34,24 +34,24 @@ The diagram below highlights the inputs and the outputs of the MATLAB code.
 In order to predict the generated power of a PV system, three inputs must be
 provided:
 
-__Weather Forecasts:__ This is obtained from an online service provider
+_Weather Forecasts:_ This is obtained from an online service provider
 (e.g.Weather Underground). In this model, 10-day forecasts of 1-hour resolution
 are used. The forecasts must cover the training and prediction periods. The
 temperature and the cloudiness are the critical weather parameters to the code.
 
-__PV System’s Parameters:__ Including location, orientation and technical parameters.
+_PV System’s Parameters:_ Including location, orientation and technical parameters.
 
-__Historic PV System’s Generated Power:__ The generation for the training
+_Historic PV System’s Generated Power:_ The generation for the training
 horizon is acquired through the energy monitoring system connected to the PV modules.
 
 #### Output Forecasts
 
-__Deterministic Forecast:__ Prediction of only one profile of the PV generated
+_Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG)
 
-__Probabilistic Forecast:__ Multiple output profiles, each is associated with a
+_Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
 than or equal to the corresponding profile is 30%.
 
