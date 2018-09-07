@@ -29,36 +29,33 @@ The diagram below highlights the inputs and the outputs of the MATLAB code.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png)
 
-1. __Input data__
+#### Input data
 
 In order to predict the generated power of a PV system, three inputs must be
 provided:
 
-  (a) __Weather Forecasts:__ This is obtained from an online service provider (e.g.
-      Weather Underground). In this model, 10-day forecasts of 1-hour resolution
-      are used. The forecasts must cover the training and prediction periods.
-      The temperature and the cloudiness are the critical weather parameters to
-      the code.
+__Weather Forecasts:__ This is obtained from an online service provider
+(e.g.Weather Underground). In this model, 10-day forecasts of 1-hour resolution
+are used. The forecasts must cover the training and prediction periods. The
+temperature and the cloudiness are the critical weather parameters to the code.
 
-  (b) __PV System’s Parameters:__ Including location, orientation and technical
-      parameters.
+__PV System’s Parameters:__ Including location, orientation and technical parameters.
 
-  (c) __(c) Historic PV System’s Generated Power:__ The generation for the training
-      horizon is acquired through the energy monitoring system connected to the
-      PV modules.
+__Historic PV System’s Generated Power:__ The generation for the training
+horizon is acquired through the energy monitoring system connected to the PV modules.
 
-2. __Output Forecasts__
+#### Output Forecasts
 
-  (a) __Deterministic Forecast:__ Prediction of only one profile of the PV generated
-      power with no probability involved.
+__Deterministic Forecast:__ Prediction of only one profile of the PV generated
+power with no probability involved.
 
-      ![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG)
+![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG)
 
-  (b) __Probabilistic Forecast:__ Multiple output profiles, each is associated
-      with a specific probability. For example, for q=30, the probability of
-      generating less than or equal to the corresponding profile is 30%.
+__Probabilistic Forecast:__ Multiple output profiles, each is associated with a
+specific probability. For example, for q=30, the probability of generating less
+than or equal to the corresponding profile is 30%.
 
-      ![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG)
+![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG)
 
 ## Guide to Download
 
