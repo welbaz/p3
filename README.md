@@ -27,7 +27,7 @@ your PC.
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png "Flow Chart)
+![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png "Flow Chart")
 
 #### Input data
 
