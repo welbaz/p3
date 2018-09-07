@@ -30,7 +30,7 @@ The diagram below highlights the inputs and the outputs of the MATLAB code.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png "Flow Chart")
 
-#### Input data
+### Input data
 
 In order to predict the generated power of a PV system, three inputs must be
 provided:
@@ -45,7 +45,7 @@ temperature and the cloudiness are the critical weather parameters to the code.
 (3) _Historic PV System’s Generated Power:_ The generation for the training
 horizon is acquired through the energy monitoring system connected to the PV modules.
 
-#### Output Forecasts
+### Output Forecasts
 
 (1) _Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
