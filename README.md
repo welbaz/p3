@@ -21,11 +21,28 @@ process to owners of PV systems. The main layout is shown below.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png)
 
+The user is requested to provide information concerning the PV system;
+
+* Location, technical and orientation parameters.
+* The server (or address) where the historic output power is obtained.
+* The weather server where the weather forecasts are acquired.
+* The directory where weather forecasts are stored.
+* The training horizon.
+* The prediction horizon.
+* The directory where PV predicted outputs are stored.
+
+Note: The button ‘Check Validity’ helps the user to verify whether the dates
+entered comply with the available weather forecasts. If ‘Period Selection’ is
+chosen as ‘Auto,’ then dates will be automatically filled in.
+
 Three sets of codes are available to download for this project;
-1- MATLAB codes for the forecasting system
-2- MATLAB codes for the GUI
-3- Executable file to use the GUI as a standalone application.
+
+1. MATLAB codes for the forecasting system
+2. MATLAB codes for the GUI
+3. Executable file to use the GUI as a standalone application.
+
 Note: MATLAB Runtime will be downloaded during the installation of the .exe file.
+
 
 ### Python Implementation
 
