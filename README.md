@@ -13,6 +13,17 @@ your PC. For more information, [click here](https://github.com/welbaz/P3/tree/ma
 * A Python code, which will be implemented over a Raspberry Pi. For more information, [click here](https://github.com/welbaz/P3/tree/master/python_codes).
 
 
+## Downloads
+
+[Click here](https://github.com/welbaz/P3/tree/master/Matlab_Codes) to access all
+the MATLAB codes concerning the P3 system.
+
+The forecasts can be obtained by running 'Main.m'. All the other functions must be
+present as well.
+
+To obtain the weather forecasts, run 'AcquireWeather.m'. You must provide your API
+key in order to be able to get the 10-day weather forecast.
+
 ## About the MATLAB Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
@@ -24,24 +35,24 @@ The diagram below highlights the inputs and the outputs of the MATLAB code.
 In order to predict the generated power of a PV system, three inputs must be
 provided:
 
-_Weather Forecasts:_ This is obtained from an online service provider
+(1)_Weather Forecasts:_ This is obtained from an online service provider
 (e.g.Weather Underground). In this model, 10-day forecasts of 1-hour resolution
 are used. The forecasts must cover the training and prediction periods. The
 temperature and the cloudiness are the critical weather parameters to the code.
 
-_PV System’s Parameters:_ Including location, orientation and technical parameters.
+(2)_PV System’s Parameters:_ Including location, orientation and technical parameters.
 
-_Historic PV System’s Generated Power:_ The generation for the training
+(3)_Historic PV System’s Generated Power:_ The generation for the training
 horizon is acquired through the energy monitoring system connected to the PV modules.
 
 #### Output Forecasts
 
-_Deterministic Forecast:_ Prediction of only one profile of the PV generated
+(1)_Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG "Deterministic Forecast")
 
-_Probabilistic Forecast:_ Multiple output profiles, each is associated with a
+(2)_Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
 than or equal to the corresponding profile is 30%.
 
