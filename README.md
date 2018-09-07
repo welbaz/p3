@@ -16,13 +16,29 @@ Please mind the basic license (see below) in using this work.
 
 ### GUI
 
+The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
+process to owners of PV systems. The main layout is shown below.
+
+![alt text][image]
+
+[image]: 
+
+Three sets of codes are available to download for this project;
+1- MATLAB codes for the forecasting system
+2- MATLAB codes for the GUI
+3- Executable file to use the GUI as a standalone application.
+Note: MATLAB Runtime will be downloaded during the installation of the .exe file.
+
 ### Python Implementation
 
-Python code puts into action the same algorithm as in the MATLAB code in Python language. It is believed that Python version reaches a broader audience in the open source community and paves the way for running the code in Linux on lower-end computer hardware (such as Raspberry Pi).
+Python code puts into action the same algorithm as in the MATLAB code in Python
+language. It is believed that Python version reaches a broader audience in the
+open source community and paves the way for running the code in Linux on lower-end
+computer hardware (such as Raspberry Pi).
 
 To run the code on your local machine, you need:
 
-- Python version 3.x.x, available for download [here](https://www.python.org/downloads/)
+- Python version 3.x.x, available for download [here](https://www.python.org/downloads/).
 
 - Code in this repository. Simply clone/download the code inside this repository.
 
@@ -73,17 +89,28 @@ detected.
 
 ## Reference Publications
 
-- El-Baz, Wessam, Peter Tzscheutschler, and Ulrich Wagner. "Day-ahead probabilistic PV generation forecast for buildings energy management systems." Solar Energy 171 (2018): 478-490.
+The MATLAB code was created at the Chair of Energy Economy and Application
+Technology in the Technical University of Munich. The code is described in the
+following publications:
 
-- El-Baz, Wessam, et al. "Impact of probabilistic small-scale photovoltaic generation forecast on energy management systems." Solar Energy 165 (2018): 136-146.
+- El-Baz, Wessam, Peter Tzscheutschler, and Ulrich Wagner. "Day-ahead probabilistic
+PV generation forecast for buildings energy management systems." Solar Energy
+171 (2018): 478-490.
+
+- El-Baz, Wessam, et al. "Impact of probabilistic small-scale photovoltaic
+generation forecast on energy management systems." Solar Energy 165 (2018): 136-146.
+
+The GUI was developed by Mohamed Eldakadosi, while the Python codes were created
+by Çağatay Eren. Both projects were part of a research internship, conducted at
+the same chair, under the supervision of Wessam El-Baz.
 
 ## Support and Contact
 
-- Wessam El-Baz, {ENTER-EMAIL-INFO}
+- Wessam El-Baz, wessam.elbaz@tum.de
 
-- Mohamed Eldakadosi (GUI), {ENTER-EMAIL-INFO}
+- Mohamed Eldakadosi (GUI), m.eldakadosi@tum.de
 
-- Cagatay Eren (Python code), cagatay.eren@protonmail.com
+- Cagatay Eren (Python code), c.eren@tum.de
 
 Feel free to clone the repository.
 
