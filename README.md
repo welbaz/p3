@@ -12,6 +12,54 @@ your own PV system.
 
 Please mind the basic license (see below) in using this work.
 
+### Welcome to The P3 System
+
+The PV Probabilistic Prediction System (The P3 System) is a tool for predicting
+the short-term power output of a PV system. It is developed via MATLAB at the
+Chair of Energy Systems and Energy Economy, Technical University of Munich. The
+system is represented by two means:
+
+* A graphical user interface (GUI), which you can simply download and install on
+your PC.
+* A python code, which will be implemented over a Raspberry Pi.
+
+### About the MATLAB Code
+
+The diagram below highlights the inputs and the outputs of the MATLAB code.
+
+![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png)
+
+1. __Input data__
+
+In order to predict the generated power of a PV system, three inputs must be
+provided:
+
+  (a) __Weather Forecasts:__ This is obtained from an online service provider (e.g.
+      Weather Underground). In this model, 10-day forecasts of 1-hour resolution
+      are used. The forecasts must cover the training and prediction periods.
+      The temperature and the cloudiness are the critical weather parameters to
+      the code.
+
+  (b) __PV System’s Parameters:__ Including location, orientation and technical
+      parameters.
+
+  (c) __(c) Historic PV System’s Generated Power:__ The generation for the training
+      horizon is acquired through the energy monitoring system connected to the
+      PV modules.
+
+2. __Output Forecasts__
+
+  (a) __Deterministic Forecast:__ Prediction of only one profile of the PV generated
+      power with no probability involved.
+
+      ![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG)
+
+  (b) __Probabilistic Forecast:__ Multiple output profiles, each is associated
+      with a specific probability. For example, for q=30, the probability of
+      generating less than or equal to the corresponding profile is 30%.
+
+      ![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG)
+
 ## Guide to Download
 
 ### GUI
@@ -21,7 +69,7 @@ process to owners of PV systems. The main layout is shown below.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png)
 
-The user is requested to provide information concerning the PV system;
+The user is requested to provide information concerning the PV system:
 
 * Location, technical and orientation parameters.
 * The server (or address) where the historic output power is obtained.
@@ -43,6 +91,41 @@ Three sets of codes are available to download for this project;
 
 Note: MATLAB Runtime will be downloaded during the installation of the .exe file.
 
+#### Acquisition of Weather Forecasts
+
+In order to predict the output power of the PV system, the user must acquire weather
+forecasts for at least 10 days. This is possible through the provided buttons:
+
+* ‘Once’: acquiring the weather forecast once upon the click.
+* ‘Continuous’: weather forecasts will be obtained every 24 hour, starting from
+the first click, until the user presses ‘STOP’.
+* ‘Specific Duration’: similar to ‘Continuous’; however, the acquirement will
+stop after the desired duration.
+
+One possible format for the weather server is the following:
+
+`http://api.wunderground.com/api/User_API/hourly10day/q/Germany/Munich.json`
+
+#### Results
+
+When ‘Generate PV Forecast’ is clicked, computations of the forecasted power start.
+The resulting outcome should be similar to the figure below.
+
+![alt text](https://github.com/welbaz/P3/blob/master/images/Finalfig.png)
+
+In addition, the 1-hour deterministic and probabilistic forecasts are stored as
+Excel sheets.
+
+![alt text](https://github.com/welbaz/P3/blob/master/images/excelScreen.png)
+
+#### Future Work
+
+The main functions of the MATLAB code have been successfully implemented in App
+Designer to create the presented GUI. Nevertheless, further improvements are
+possible by reducing the number of lines and increasing the execution efficiency.
+The majority of the computation time is spent on DataAcq function, where weather
+forecasts are stored as a MATLAB’s tscollection object. This suggests an area of
+improvement to reduce the consumed time for this function.
 
 ### Python Implementation
 
