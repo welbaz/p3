@@ -1,18 +1,7 @@
 # Probabilistic Prediction for PV Systems on Buildings
 
-## Introduction
 
-This repository holds files used for probabilistic prediction of photovoltaic
-energy generation on buildings. Here you can find the MATLAB code, a graphical
-user interface for the MATLAB code, and a Python implementation of the same
-code (in progress).
-
-Use this code to generate probabilistic prediction of energy generation for
-your own PV system.
-
-Please mind the basic license (see below) in using this work.
-
-### Welcome to The P3 System
+## Welcome to The P3 System
 
 The PV Probabilistic Prediction System (The P3 System) is a tool for predicting
 the short-term power output of a PV system. It is developed via MATLAB at the
@@ -20,10 +9,11 @@ Chair of Energy Systems and Energy Economy, Technical University of Munich. The
 system is represented by two means:
 
 * A graphical user interface (GUI), which you can simply download and install on
-your PC.
-* A Python code, which will be implemented over a Raspberry Pi.
+your PC. For more information, [click here](https://github.com/welbaz/P3/tree/master/MATLAB_GUI).
+* A Python code, which will be implemented over a Raspberry Pi. For more information, [click here](https://github.com/welbaz/P3/tree/master/python_codes).
 
-### About the MATLAB Code
+
+## About the MATLAB Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
 
