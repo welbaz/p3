@@ -19,9 +19,7 @@ Please mind the basic license (see below) in using this work.
 The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
 process to owners of PV systems. The main layout is shown below.
 
-![alt text][image]
-
-[image]: 
+![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png)
 
 Three sets of codes are available to download for this project;
 1- MATLAB codes for the forecasting system
