@@ -35,24 +35,24 @@ The diagram below highlights the inputs and the outputs of the MATLAB code.
 In order to predict the generated power of a PV system, three inputs must be
 provided:
 
-(1)_Weather Forecasts:_ This is obtained from an online service provider
+(1) _Weather Forecasts:_ This is obtained from an online service provider
 (e.g.Weather Underground). In this model, 10-day forecasts of 1-hour resolution
 are used. The forecasts must cover the training and prediction periods. The
 temperature and the cloudiness are the critical weather parameters to the code.
 
-(2)_PV System’s Parameters:_ Including location, orientation and technical parameters.
+(2) _PV System’s Parameters:_ Including location, orientation and technical parameters.
 
-(3)_Historic PV System’s Generated Power:_ The generation for the training
+(3) _Historic PV System’s Generated Power:_ The generation for the training
 horizon is acquired through the energy monitoring system connected to the PV modules.
 
 #### Output Forecasts
 
-(1)_Deterministic Forecast:_ Prediction of only one profile of the PV generated
+(1) _Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG "Deterministic Forecast")
 
-(2)_Probabilistic Forecast:_ Multiple output profiles, each is associated with a
+(2) _Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
 than or equal to the corresponding profile is 30%.
 
@@ -180,18 +180,19 @@ Python data structures that are used earlier may be subject to change in the
 future work, if shortcomings of certain data types against the MATLAB code are
 detected.
 
-## Reference Publications
+## Reference Publications and Developers
 
 The MATLAB code was created at the Chair of Energy Economy and Application
 Technology in the Technical University of Munich. The code is described in the
 following publications:
 
-- El-Baz, Wessam, Peter Tzscheutschler, and Ulrich Wagner. "Day-ahead probabilistic
-PV generation forecast for buildings energy management systems." Solar Energy
-171 (2018): 478-490.
+- W. El-Baz, M. Seufzger, S. Lutzenberger, P. Tzscheutschler and U. Wagner,
+"Impact of probabilistic small-scale photovoltaic generation forecast
+on energy management systems," _Solar Energy_, vol. 165, pp. 136-146, 1 May 2018.
 
-- El-Baz, Wessam, et al. "Impact of probabilistic small-scale photovoltaic
-generation forecast on energy management systems." Solar Energy 165 (2018): 136-146.
+- W. El-Baz, P. Tzscheutschler and U. Wagner, "Day-ahead probabilistic PV
+generation forecast for buildings energy management systems," _Solar Energy_,
+vol. 171, pp. 478-490, 1 September 2018.
 
 The GUI was developed by Mohamed Eldakadosi, while the Python codes were created
 by Çağatay Eren. Both projects were part of a research internship, conducted at
@@ -199,11 +200,10 @@ the same chair, under the supervision of Wessam El-Baz.
 
 ## Support and Contact
 
-- Wessam El-Baz, wessam.elbaz@tum.de
-
-- Mohamed Eldakadosi (GUI), m.eldakadosi@tum.de
-
-- Çağatay Eren (Python code), c.eren@tum.de
+Please review the mentioned publications above for theoretical queries about the forecasting system. For further queries:
+- Wessam El-Baz (wessam.elbaz@tum.de) 
+- concerning the GUI: Mohamed Eldakadosi (m.eldakadosi@tum.de)
+- concerning the python codes: Çağatay Eren (c.eren@tum.de)
 
 Feel free to clone the repository.
 
