@@ -21,13 +21,13 @@ system is represented by two means:
 
 * A graphical user interface (GUI), which you can simply download and install on
 your PC.
-* A python code, which will be implemented over a Raspberry Pi.
+* A Python code, which will be implemented over a Raspberry Pi.
 
 ### About the MATLAB Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png)
+![alt text](https://github.com/welbaz/P3/blob/master/images/flowChart.png "Flow Chart)
 
 #### Input data
 
@@ -49,13 +49,13 @@ horizon is acquired through the energy monitoring system connected to the PV mod
 _Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG)
+![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG "Deterministic Forecast")
 
 _Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
 than or equal to the corresponding profile is 30%.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG)
+![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG "Probabilistic Forecast")
 
 ## Guide to Download
 
@@ -64,7 +64,7 @@ than or equal to the corresponding profile is 30%.
 The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
 process to owners of PV systems. The main layout is shown below.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png)
+![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png "Main Layout")
 
 The user is requested to provide information concerning the PV system:
 
@@ -76,7 +76,7 @@ The user is requested to provide information concerning the PV system:
 * The prediction horizon.
 * The directory where PV predicted outputs are stored.
 
-Note: The button ‘Check Validity’ helps the user to verify whether the dates
+__Note:__ The button ‘Check Validity’ helps the user to verify whether the dates
 entered comply with the available weather forecasts. If ‘Period Selection’ is
 chosen as ‘Auto,’ then dates will be automatically filled in.
 
@@ -86,7 +86,7 @@ Three sets of codes are available to download for this project;
 2. MATLAB codes for the GUI
 3. Executable file to use the GUI as a standalone application.
 
-Note: MATLAB Runtime will be downloaded during the installation of the .exe file.
+__Note:__ MATLAB Runtime will be downloaded during the installation of the .exe file.
 
 #### Acquisition of Weather Forecasts
 
@@ -108,12 +108,12 @@ One possible format for the weather server is the following:
 When ‘Generate PV Forecast’ is clicked, computations of the forecasted power start.
 The resulting outcome should be similar to the figure below.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/Finalfig.png)
+![alt text](https://github.com/welbaz/P3/blob/master/images/Finalfig.png "Result")
 
 In addition, the 1-hour deterministic and probabilistic forecasts are stored as
 Excel sheets.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/excelScreen.png)
+![alt text](https://github.com/welbaz/P3/blob/master/images/excelScreen.png "Excel Sheets")
 
 #### Future Work
 
@@ -179,9 +179,6 @@ Python data structures that are used earlier may be subject to change in the
 future work, if shortcomings of certain data types against the MATLAB code are
 detected.
 
-
-## Theory Behind PV Forecasting System
-
 ## Reference Publications
 
 The MATLAB code was created at the Chair of Energy Economy and Application
@@ -205,7 +202,7 @@ the same chair, under the supervision of Wessam El-Baz.
 
 - Mohamed Eldakadosi (GUI), m.eldakadosi@tum.de
 
-- Cagatay Eren (Python code), c.eren@tum.de
+- Çağatay Eren (Python code), c.eren@tum.de
 
 Feel free to clone the repository.
 
