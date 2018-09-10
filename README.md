@@ -25,7 +25,6 @@ key in order to be able to get the 10-day weather forecast.
 ## About the Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
-
 <img src="https://github.com/welbaz/P3/blob/master/images/flowChart.png" alt="https://github.com/welbaz/P3/blob/master/images/flowChart.png">
 
 ### Input data
@@ -47,15 +46,12 @@ horizon is acquired through the energy monitoring system connected to the PV mod
 
 (1) _Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
-
-![alt text](https://github.com/welbaz/P3/images/detFor2.PNG "Deterministic Forecast")
+<img src="https://github.com/welbaz/P3/blob/master/images/detFor2.PNG" alt="https://github.com/welbaz/P3/blob/master/images/detFor2.PNG">
 
 (2) _Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
 than or equal to the corresponding profile is 30%.
-
-![alt text](https://github.com/welbaz/P3/blob/master/images/proFor2.PNG "Probabilistic Forecast")
-
+<img src="https://github.com/welbaz/P3/blob/master/images/proFor2.PNG" alt="https://github.com/welbaz/P3/blob/master/images/proFor2.PNG">
 
 ## Reference Publications and Developers
 
@@ -80,9 +76,7 @@ by Çağatay Eren.
 
 The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
 process to owners of PV systems. The main layout is shown below.
-
-![alt text](https://github.com/welbaz/P3/blob/master/images/p3.png "Main Layout")
-
+<img src="https://github.com/welbaz/P3/blob/master/images/p3.png" alt="https://github.com/welbaz/P3/blob/master/images/p3.png">
 The user is requested to provide information concerning the PV system:
 
 * Location, technical and orientation parameters.
@@ -126,13 +120,12 @@ One possible format for the weather server is the following:
 
 When ‘Generate PV Forecast’ is clicked, computations of the forecasted power start.
 The resulting outcome should be similar to the figure below.
-
-![alt text](https://github.com/welbaz/P3/blob/master/images/Finalfig.png "Result")
-
+<img src="https://github.com/welbaz/P3/blob/master/images/Finalfig.png" alt="https://github.com/welbaz/P3/blob/master/images/Finalfig.png">
 In addition, the 1-hour deterministic and probabilistic forecasts are stored as
 Excel sheets.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/excelScreen.png "Excel Sheets")
+<img src="https://github.com/welbaz/P3/blob/master/images/excelScreen.png" alt="https://github.com/welbaz/P3/blob/master/images/excelScreen.png">
+
 
 #### Future Work
 
