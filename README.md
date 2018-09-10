@@ -48,7 +48,7 @@ horizon is acquired through the energy monitoring system connected to the PV mod
 (1) _Deterministic Forecast:_ Prediction of only one profile of the PV generated
 power with no probability involved.
 
-![alt text](https://github.com/welbaz/P3/blob/master/images/detFor2.PNG "Deterministic Forecast")
+![alt text](https://github.com/welbaz/P3/images/detFor2.PNG "Deterministic Forecast")
 
 (2) _Probabilistic Forecast:_ Multiple output profiles, each is associated with a
 specific probability. For example, for q=30, the probability of generating less
