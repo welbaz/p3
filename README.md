@@ -207,9 +207,4 @@ Please review the mentioned publications above for theoretical queries about the
 - Wessam El-Baz (wessam.elbaz@tum.de) 
 - concerning the GUI: Mohamed Eldakadosi (m.eldakadosi@tum.de)
 - concerning the python codes: Çağatay Eren (c.eren@tum.de)
-
-Feel free to clone the repository.
-
-Pull requests are welcomed.
-
 ## License Information
