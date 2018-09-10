@@ -149,7 +149,7 @@ def data_acq(dot_mat_files_data_path):
 
     del i, ii, k, j, file_name, mat_read, mat_DataOut  # purge auxiliary variables
     # let's save the data containers as .txt files so that we can examine them
-    np.savetxt('temp.txt', temp)
+    np.savetxt('temp.txt', temp, fmt='%10.4f')
     np.savetxt('uvi.txt', uvi)
     np.savetxt('cond.txt', cond, fmt='%s')
     np.savetxt('sky.txt', sky)
