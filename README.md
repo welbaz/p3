@@ -72,8 +72,7 @@ generation forecast for buildings energy management systems," _Solar Energy_,
 vol. 171, pp. 478-490, 1 September 2018.
 
 The GUI was developed by Mohamed Eldakadosi, while the Python codes were created
-by Çağatay Eren. Both projects were part of a research internship, conducted at
-the same chair, under the supervision of Wessam El-Baz.
+by Çağatay Eren. 
 
 # The Graphical User Interface (GUI)
 
