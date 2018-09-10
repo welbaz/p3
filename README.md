@@ -116,7 +116,7 @@ One possible format for the weather server is the following:
 
 `http://api.wunderground.com/api/User_API/hourly10day/q/Germany/Munich.json`
 
-#### Results
+#### Output
 
 When ‘Generate PV Forecast’ is clicked, computations of the forecasted power start.
 The resulting outcome should be similar to the figure below.
