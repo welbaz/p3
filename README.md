@@ -22,7 +22,7 @@ present as well.
 To obtain the weather forecasts, run _AcquireWeather.m_. You must provide your API
 key in order to be able to get the 10-day weather forecast.
 
-## About the MATLAB Code
+## About the Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
 
