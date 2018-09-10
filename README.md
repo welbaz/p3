@@ -3,7 +3,7 @@
 
 ## Welcome to The P3 System
 
-The PV Probabilistic Prediction System (The P3 System) is a tool for predicting
+The Probabilistic Prediction System for PVs (P3 System) is a tool for predicting
 the short-term power output of a PV system. It available as:
 
 * A Matlab source code.
