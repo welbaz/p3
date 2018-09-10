@@ -74,9 +74,9 @@ vol. 171, pp. 478-490, 1 September 2018.
 The GUI was developed by Mohamed Eldakadosi, while the Python codes were created
 by Çağatay Eren. 
 
-# The Graphical User Interface (GUI)
-
-## About the GUI
+## Available Sources 
+### Matlab Source Code
+#### Matlab GUI
 
 The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
 process to owners of PV systems. The main layout is shown below.
@@ -97,7 +97,7 @@ __Note:__ The button ‘Check Validity’ helps the user to verify whether the d
 entered comply with the available weather forecasts. If ‘Period Selection’ is
 chosen as ‘Auto,’ then dates will be automatically filled in.
 
-## Downloads
+#### Downloads
 
 Two sets of files are available to download for this part;
 
@@ -107,7 +107,7 @@ can be edited/run through MATLAB's App Designer.
 2. Executable file to use the GUI as a standalone application.
 __Note:__ MATLAB Runtime will be downloaded during the installation of the .exe file.
 
-## Acquisition of Weather Forecasts
+#### Acquisition of Weather Forecasts
 
 In order to predict the output power of the PV system, the user must acquire weather
 forecasts for at least 10 days. This is possible through the provided buttons:
@@ -122,7 +122,7 @@ One possible format for the weather server is the following:
 
 `http://api.wunderground.com/api/User_API/hourly10day/q/Germany/Munich.json`
 
-## Results
+#### Results
 
 When ‘Generate PV Forecast’ is clicked, computations of the forecasted power start.
 The resulting outcome should be similar to the figure below.
@@ -134,7 +134,7 @@ Excel sheets.
 
 ![alt text](https://github.com/welbaz/P3/blob/master/images/excelScreen.png "Excel Sheets")
 
-## Future Work
+#### Future Work
 
 The main functions of the MATLAB code have been successfully implemented in App
 Designer to create the presented GUI. Nevertheless, further improvements are
@@ -143,9 +143,9 @@ The majority of the computation time is spent on DataAcq function, where weather
 forecasts are stored as a MATLAB’s tscollection object. This suggests an area of
 improvement to reduce the consumed time for this function.
 
-# The Python Codes
+### The Python Codes
 
-## About Python Implementation
+#### About Python Implementation
 
 Python code puts into action the same algorithm as in the MATLAB code in Python
 language. It is believed that Python version reaches a broader audience in the
@@ -158,7 +158,7 @@ To run the code on your local machine, you need:
 
 - Code in this repository. Simply clone/download the code inside this repository.
 
-## Current Progress
+#### Current Progress
 
 There are fourteen core .mat files that work on the probabilistic PV prediction
 algorithm. They are given in the list below with their rewriting-in-Python work
@@ -181,7 +181,7 @@ statuses:
 | allfitdist_woFig.m | future work   |
 | GenPro.m           | future work   |
 
-### DataAcq.m
+##### DataAcq.m
 
 Data acquisition function gathers weather data from a directory on the local
 machine. This weather data is stored in form of a .mat file. The function keeps
@@ -193,7 +193,7 @@ matrix manipulations, it uses pandas time series for putting a timestamp on
 individual data points. In the end, Python data acquisition function returns
 a dictionary data containing weather data and the timestamp data.
 
-## Future Work
+#### Future Work
 
 Future work involves rewriting the remaining MATLAB functions in Python. The
 Python data structures that are used earlier may be subject to change in the
