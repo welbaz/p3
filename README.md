@@ -11,6 +11,7 @@ the short-term power output of a PV system. It available as:
 your PC. For more information, [click here](https://github.com/welbaz/P3/tree/master/MATLAB_GUI).
 * A Python code, which will be implemented over a Raspberry Pi. For more information, [click here](https://github.com/welbaz/P3/tree/master/python_codes).
 
+<a href="https://zenodo.org/badge/latestdoi/112208011"><img src="https://zenodo.org/badge/112208011.svg" alt="DOI"></a>
 
 ## Downloads
 
