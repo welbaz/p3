@@ -25,7 +25,8 @@ key in order to be able to get the 10-day weather forecast.
 ## About the Code
 
 The diagram below highlights the inputs and the outputs of the MATLAB code.
-<img src="https://github.com/welbaz/P3/blob/master/images/flowChart.png" alt="https://github.com/welbaz/P3/blob/master/images/flowChart.png">
+
+<img src="https://github.com/welbaz/P3/master/images/flowChart.png" alt="https://github.com/welbaz/P3/master/images/flowChart.png">
 
 ### Input data
 
