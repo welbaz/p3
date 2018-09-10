@@ -4,9 +4,7 @@
 ## Welcome to The P3 System
 
 The PV Probabilistic Prediction System (The P3 System) is a tool for predicting
-the short-term power output of a PV system. It is developed via MATLAB at the
-Chair of Energy Systems and Energy Economy, Technical University of Munich. The
-system is represented by two means:
+the short-term power output of a PV system. It available as:
 
 * A graphical user interface (GUI), which you can simply download and install on
 your PC. For more information, [click here](https://github.com/welbaz/P3/tree/master/MATLAB_GUI).
