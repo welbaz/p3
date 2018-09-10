@@ -6,7 +6,7 @@
 The PV Probabilistic Prediction System (The P3 System) is a tool for predicting
 the short-term power output of a PV system. It available as:
 
-* A Matlab source code
+* A Matlab source code.
 * An excecutable software with graphical user interface (GUI), which you can simply download and install on
 your PC. For more information, [click here](https://github.com/welbaz/P3/tree/master/MATLAB_GUI).
 * A Python code, which will be implemented over a Raspberry Pi. For more information, [click here](https://github.com/welbaz/P3/tree/master/python_codes).
