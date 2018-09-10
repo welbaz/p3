@@ -75,7 +75,7 @@ by Çağatay Eren.
 
 The GUI is developed, through MATLAB’s App Designer, to facilitate the prediction
 process to owners of PV systems. The main layout is shown below.
-<img src="https://github.com/welbaz/P3/blob/master/images/p3.png" alt="https://github.com/welbaz/P3/blob/master/images/p3.png">
+<img src="https://raw.githubusercontent.com/welbaz/P3/master/images/p3.png" alt="https://raw.githubusercontent.com/welbaz/P3/master/images/p3.png">
 The user is requested to provide information concerning the PV system:
 
 * Location, technical and orientation parameters.
@@ -123,7 +123,7 @@ The resulting outcome should be similar to the figure below.
 In addition, the 1-hour deterministic and probabilistic forecasts are stored as
 Excel sheets.
 
-<img src="https://github.com/welbaz/P3/blob/master/images/excelScreen.png" alt="https://github.com/welbaz/P3/blob/master/images/excelScreen.png">
+<img src="https://raw.githubusercontent.com/welbaz/P3/master/images/excelScreen.png" alt="https://raw.githubusercontent.com/welbaz/P3/master/images/excelScreen.png">
 
 
 #### Future Work
