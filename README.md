@@ -1,4 +1,4 @@
-# Probabilistic Prediction for PV Systems on Buildings - P3
+# Probabilistic Prediction for PV Systems - P3
 
 
 ## Welcome to The P3 System
