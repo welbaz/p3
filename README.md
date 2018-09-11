@@ -127,24 +127,11 @@ Excel sheets.
 
 <img src="https://raw.githubusercontent.com/welbaz/P3/master/images/excelScreen.png" alt="https://raw.githubusercontent.com/welbaz/P3/master/images/excelScreen.png">
 
-
-#### Future Work
-
-The main functions of the MATLAB code have been successfully implemented in App
-Designer to create the presented GUI. Nevertheless, further improvements are
-possible by reducing the number of lines and increasing the execution efficiency.
-The majority of the computation time is spent on DataAcq function, where weather
-forecasts are stored as a MATLAB’s tscollection object. This suggests an area of
-improvement to reduce the consumed time for this function.
-
 ### The Python Codes
 
 #### About Python Implementation
-
 Python code puts into action the same algorithm as in the MATLAB code in Python
-language. It is believed that Python version reaches a broader audience in the
-open source community and paves the way for running the code in Linux on lower-end
-computer hardware (such as Raspberry Pi).
+language.
 
 To run the code on your local machine, you need:
 
@@ -154,7 +141,7 @@ To run the code on your local machine, you need:
 
 #### Current Progress
 
-There are fourteen core .mat files that work on the probabilistic PV prediction
+There are fourteen core .m files that work on the probabilistic PV prediction
 algorithm. They are given in the list below with their rewriting-in-Python work
 statuses:
 
@@ -185,15 +172,7 @@ data are stored in matrices.
 Python form of this function imitates this behavior. It uses numpy arrays for
 matrix manipulations, it uses pandas time series for putting a timestamp on
 individual data points. In the end, Python data acquisition function returns
-a dictionary data containing weather data and the timestamp data.
-
-#### Future Work
-
-Future work involves rewriting the remaining MATLAB functions in Python. The
-Python data structures that are used earlier may be subject to change in the
-future work, if shortcomings of certain data types against the MATLAB code are
-detected.
-
+a dictionary data (To be reworked)
 
 ## Support and Contact
 
