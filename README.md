@@ -12,7 +12,7 @@ your PC. For more information, [click here](https://github.com/welbaz/P3/tree/ma
 * A Python code, which will be implemented over a Raspberry Pi. For more information, [click here](https://github.com/welbaz/P3/tree/master/python_codes).
 
 <a href="https://zenodo.org/badge/latestdoi/112208011"><img src="https://zenodo.org/badge/112208011.svg" alt="DOI"></a>
-
+<a href="https://www.gnu.org/licenses/gpl-3.0)"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License"></a>
 ## Downloads
 
 [Click here](https://github.com/welbaz/P3/tree/master/Matlab_Codes) to access all
