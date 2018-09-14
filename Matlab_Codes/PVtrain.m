@@ -1,4 +1,4 @@
-function [tree] = PVtrain(Location,Pvsystem,t,UTC,WeatherforecastOrg, DiffMethod, Method)
+function [tree] = PVtrain(Location,Pvsystem,t,UTC,WeatherforecastOrg, DiffMethod, Method, PowerServer)
 %this function creates regression tree to train the code, in order to make
 %a prediction later
 
@@ -11,7 +11,7 @@ timestep=60;    %1-hr resolution
 %% Data aquiration (Clear Sky + AC Power)
 PVClearsky=clearskygen(Pvsystem,Location,t,UTC);
 
-AC_power=emoncms(1,320,Starttime,Endtime,timestep);
+AC_power=emoncms2(PowerServer,Starttime,Endtime,timestep);
 AC_power=AC_power(:,2)*1000; %%% kw to watts
  NanIndex=isnan(AC_power); %return a matrix of size AC_power with logical 1 corresponding to NaN elements
 
