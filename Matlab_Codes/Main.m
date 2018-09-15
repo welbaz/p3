@@ -13,8 +13,8 @@ clear PVpredictArea
 
 %Please enter the the server (address) for obtaining the power output of
 %the PV system
-FeedID = 00;
-APIkey = 0000000000000000000000;
+FeedID = '000';
+APIkey = 'XXXXXXXXXXXXXXXXXXXXXXX';
 PowerServer = ['http://129.187.90.167/emoncms/feed/data.json?id=' ...
     FeedID '&apikey=' APIkey];
 
@@ -33,8 +33,8 @@ type='once';
 
 %set training's start and end times
 %(user input & depending on available data)
-StartTimeT = datetime(2016,5,1,0,0,0);
-EndTimeT = datetime(2016,5,12,0,0,0);
+StartTimeT = datetime(2018,8,15,0,0,0);
+EndTimeT = datetime(2018,9,8,23,59,0);
 
 timestep=60;   %[minutes] i.e. 1 hour
 timestep1m=10;  %for probability training
@@ -50,8 +50,8 @@ UTC=0;
 %% Prediction's Time Input
 
 %%set training's start and end times (should be 'now' & 'now+24h')
-StartTimeP=datetime(2016,5,13,0,0,0);         
-EndTimeP=datetime(2016,5,14,0,0,0);         
+StartTimeP=datetime(2018,9,9,0,0,0);         
+EndTimeP=datetime(2018,9,9,23,59,0);         
 
 %create a time vector for prediction with 1-hour resolution
 TimeP=StartTimeP:minutes(timestep):EndTimeP;
@@ -87,7 +87,7 @@ PVsystem.OArea=No_modules*Amodule;  %total area PV systems
 
 %based on 'forecasted weather' data available
 if exist('WeatherforecastOrg') ~= 1     %checks if PV measurement data already structured for calculation
-    Directory='C:\The P3 System\';  %where 10-day weather forecasts are stored (user's input)
+    Directory='C:\PV Forecast\Weather Forecast\';  %where 10-day weather forecasts are stored (user's input)
     WeatherforecastOrg=DataAcq(timestep,Directory);            %structuring PV measurement data if not already done
 end
 
@@ -127,20 +127,6 @@ xlabel('Time [hours]')
 ylabel('Power [kW]')
 xlim([StartTimeP EndTimeP])
 datetick('x',15,'keeplimits')
-
-DetFor = uifigure('Name','PV Deterministic Forecast','Position',[100 100 964 750]);
-
-DetForAx = uiaxes(DetFor);
-DetForAx.FontSize = 20;
-DetForAx.Position = [28 28 909 697];
-plot(DetForAx, TimeP, PVdetpredict.Data/1000)
-title(DetForAx, ['PV Deterministic Forecast (' datestr(StartTimeP,0)...
-    ' to ' datestr(EndTimeP,0) ')']);
-xlabel(DetForAx, 'Time [hour]')
-ylabel(DetForAx, 'Power [kW]')
-xlim(DetForAx, [StartTimeP EndTimeP])
-legend(DetForAx,'PV det')
-
 
 
 %% Extract Data from Weather-Forecasted Data
