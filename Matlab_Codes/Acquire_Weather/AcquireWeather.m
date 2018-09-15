@@ -1,7 +1,7 @@
 
 country='Germany';
 city='Munich';
-WeatherAPI= 000000000000;
+WeatherAPI= '00000000000000000';
 AcqServer=['http://api.wunderground.com/api/' WeatherAPI '/hourly10day/q/'];
 %%% Acquire data online
 url=[AcqServer country '/' city '.json'];
