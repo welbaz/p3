@@ -1,4 +1,4 @@
-function data = emoncmsApp(server,Starttime,Endtime,delta)
+function data = emoncms2(server,Starttime,Endtime,delta)
 %output of this function is hourly power output [kW] of PV system
 %has size of nx2, where n is number of hours in [Starttime,Endtime]
 %1st column represents time, while 2nd represents corresponding output
@@ -17,11 +17,7 @@ data=zeros(0,0);
 
 if days < 123
     interval=delta*60;
-%     if API_opt==1
-%         API='9bf0be7d612e9d4a608f7ec519f64f87';
-%     else 
-%         API='fceb1d23bb716422095318980b5b73f8';
-%     end
+
 
     if delta <=10
         data=[];
