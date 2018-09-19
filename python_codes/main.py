@@ -3,12 +3,14 @@
 # import libraries
 import numpy as np  # for multi-dim arrays
 import pandas as pd  # for datetime, timestamp etc.
-import data_acq
+import smartup_lib
 
 # ---User inputs
 # The folder that contains .mat files:
-real_path = '/home/erencaga/Documents/UNIVERSITY/TUM/second_semester/smartUp/data/PV Predict Group/Testdata/'
-dummy_path = '/home/erencaga/Documents/UNIVERSITY/TUM/second_semester/smartUp/data/PV Predict Group/dummy_test_data/'
+real_path = '/home/erencaga/Documents/UNIVERSITY/TUM/second_semester/smartUp\
+/data/PV Predict Group/Testdata/'
+dummy_path = '/home/erencaga/Documents/UNIVERSITY/TUM/second_semester/smartUp\
+/data/PV Predict Group/dummy_test_data/'
 dot_mat_files_data_path = real_path
 
 
@@ -77,11 +79,12 @@ number_of_modules = 12
 module_area = 1.67  # in METER-SQUARED
 # change above values for other pv systems
 # store the pv system data in a dictionary
-pv_system = {'ppeak': ppeak, 'tilt': tilt, 'azimuth': azimuth, 'eff': eff, 'number_of_modules': number_of_modules, 'module_area': module_area}
+pv_system = {'ppeak': ppeak, 'tilt': tilt, 'azimuth': azimuth, 'eff': eff,
+             'number_of_modules': number_of_modules, 'module_area': module_area}
 
 
 if 'weatherforecast' not in dir():
-    weatherforecast = data_acq.data_acq(dot_mat_files_data_path)
+    weatherforecast = smartup_lib.data_acq(dot_mat_files_data_path)
 
 # For daywise simulation
 if prediction_type == 'daywise':
